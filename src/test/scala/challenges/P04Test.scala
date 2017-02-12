@@ -24,6 +24,5 @@ class P04Test extends FlatSpec with Matchers {
 
     "Length using built-in indexOf with last" should "throw no such element exception" in {
         an [NoSuchElementException] should be thrownBy P04.lengthUsingBuildInIndexOf(emptyList)
-
     }
 }
