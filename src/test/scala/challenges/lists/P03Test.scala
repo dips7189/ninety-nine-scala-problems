@@ -1,4 +1,4 @@
-package challenges
+package challenges.lists
 
 import org.scalatest.{FlatSpec, Matchers}
 

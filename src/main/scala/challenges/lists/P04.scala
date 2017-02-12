@@ -1,4 +1,6 @@
-package challenges
+package challenges.lists
+
+import scala.annotation.tailrec
 
 object P04 {
 
@@ -11,6 +13,7 @@ object P04 {
     def lengthUsingFoldRight[X](l: List[X]): Int = l.foldRight(0)((_, acc) => acc + 1)
 
     def lengthUsingPatternMatching[X](l: List[X]): Int = {
+        @tailrec
         def length(acc: Int, l: List[X]): Int = l match {
             case _ :: xs => length(acc + 1, xs)
             case Nil => acc

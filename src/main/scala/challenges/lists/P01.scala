@@ -1,4 +1,6 @@
-package challenges
+package challenges.lists
+
+import scala.annotation.tailrec
 
 object P01 {
 
@@ -8,6 +10,7 @@ object P01 {
 
     def lastUsingAnotherBuiltIn[X](l: List[X]): X = l.reverse.head
 
+    @tailrec
     def lastUsingPatternMatching[X](l: List[X]): X = l match {
         case x :: Nil => x
         case _ :: xs => lastUsingPatternMatching(xs)

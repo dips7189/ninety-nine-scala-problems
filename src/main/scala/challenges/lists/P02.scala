@@ -1,9 +1,12 @@
-package challenges
+package challenges.lists
+
+import scala.annotation.tailrec
 
 object P02 {
 
     def penultimateUsingFoldLeft[X](l: List[X]): X = l.foldLeft((l head, l.tail.head)) { (x, y) => (x._2, y) }._1
 
+    @tailrec
     def penultimateUsingPatternMatching[X](l: List[X]): X = l match {
         case x :: _ :: Nil => x
         case _ :: xs => penultimateUsingPatternMatching(xs)
