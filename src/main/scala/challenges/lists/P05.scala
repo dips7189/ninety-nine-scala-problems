@@ -20,7 +20,7 @@ object P05 {
 
     def reverseUsingPatternMatchingAgain[X](l: List[X]): List[X] = l match {
         case Nil => l
-        case x :: xs => reverseUsingBuiltIn(List(x):::xs)
+        case x :: xs => reverseUsingPatternMatchingAgain(xs) ::: List(x)
     }
 
 }
