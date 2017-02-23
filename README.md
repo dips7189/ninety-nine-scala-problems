@@ -135,3 +135,12 @@ res0: List[Symbol] = List('a, 'a, 'a, 'b, 'b, 'b, 'c, 'c, 'c, 'c, 'c, 'c, 'd, 'd
 scala> drop(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k))
 res0: List[Symbol] = List('a, 'b, 'd, 'e, 'g, 'h, 'j, 'k)
 ```
+
+### [P17](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P17.scala) **(\*\*) Split a list into two parts**
+
+The length of the first part is given. Use a Tuple for your result.
+
+```console
+scala> split(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k))
+res0: (List[Symbol], List[Symbol]) = (List('a, 'b, 'c),List('d, 'e, 'f, 'g, 'h, 'i, 'j, 'k))
+```
