@@ -170,3 +170,10 @@ Return the list and the removed element in a Tuple. Elements are numbered from 0
 scala> removeAt(1, List('a, 'b, 'c, 'd))
 res0: (List[Symbol], Symbol) = (List('a, 'c, 'd),'b)
 ```
+
+### [P21](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P21.scala) **(\*) Insert an element at a given position into a list**
+
+```console
+scala> insertAt('new, 1, List('a, 'b, 'c, 'd))
+res0: List[Symbol] = List('a, 'new, 'b, 'c, 'd)
+```
