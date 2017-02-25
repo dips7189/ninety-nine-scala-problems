@@ -161,3 +161,12 @@ res0: List[Symbol] = List('d, 'e, 'f, 'g, 'h, 'i, 'j, 'k, 'a, 'b, 'c)
 scala> rotate(-2, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k))
 res1: List[Symbol] = List('j, 'k, 'a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i)
 ```
+
+### [P20](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P20.scala) **(\*) Remove the K'th element from a list**
+
+Return the list and the removed element in a Tuple. Elements are numbered from 0.
+
+```console
+scala> removeAt(1, List('a, 'b, 'c, 'd))
+res0: (List[Symbol], Symbol) = (List('a, 'c, 'd),'b)
+```
