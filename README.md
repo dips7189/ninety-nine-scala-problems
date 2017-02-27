@@ -177,3 +177,10 @@ res0: (List[Symbol], Symbol) = (List('a, 'c, 'd),'b)
 scala> insertAt('new, 1, List('a, 'b, 'c, 'd))
 res0: List[Symbol] = List('a, 'new, 'b, 'c, 'd)
 ```
+
+### [P22](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P21.scala) **(\*) Create a list containing all integers within a given range**
+
+```console
+scala> range(4, 9)
+res0: List[Int] = List(4, 5, 6, 7, 8, 9)
+```
