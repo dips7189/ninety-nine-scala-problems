@@ -28,7 +28,7 @@ res0: Int = 5
 
 ### [P03](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P03.scala) **(\*) Find the Kth element of a list**
 
-By convention, the first element in the list is element 0.
+> By convention, the first element in the list is element 0.
 
 ```console
 scala> nth(2, List(1, 1, 2, 3, 5, 8))
@@ -65,7 +65,7 @@ res0: List[Any] = List(1, 1, 2, 3, 5, 8)
 
 ### [P08](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P08.scala) **(\*\*) Eliminate consecutive duplicates of list elements**
 
-If a list contains repeated elements they should be replaced with a single copy of the element. The order of the elements should not be changed.
+> If a list contains repeated elements they should be replaced with a single copy of the element. The order of the elements should not be changed.
 
 ```console
 scala> compress(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
@@ -74,7 +74,7 @@ res0: List[Symbol] = List('a, 'b, 'c, 'a, 'd, 'e)
 
 ### [P09](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P09.scala) **(\*\*) Pack consecutive duplicates of list elements into sublists**
 
-If a list contains repeated elements they should be placed in separate sublists.
+> If a list contains repeated elements they should be placed in separate sublists.
 
 ```console
 scala> pack(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
@@ -83,7 +83,7 @@ res0: List[List[Symbol]] = List(List('a, 'a, 'a, 'a), List('b), List('c, 'c), Li
 
 ### [P10](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P10.scala) **(\*) Run-length encoding of a list**
 
-Use the result of problem 09 to implement the so-called run-length encoding data compression method. Consecutive duplicates of elements are encoded as terms [N,E] where N is the number of duplicates of the element E.
+> Use the result of problem 09 to implement the so-called run-length encoding data compression method. Consecutive duplicates of elements are encoded as terms [N,E] where N is the number of duplicates of the element E.
 
 ```console
 scala> encode(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
@@ -92,7 +92,7 @@ res0: List[(Int, Symbol)] = List((4,'a), (1,'b), (2,'c), (2,'a), (1,'d), (4,'e))
 
 ### [P11](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P11.scala) **(\*) Modified run-length encoding**
 
-Modify the result of problem 10 in such a way that if an element has no duplicates it is simply copied into the result list. Only elements with duplicates are transferred as [N,E] terms.
+> Modify the result of problem 10 in such a way that if an element has no duplicates it is simply copied into the result list. Only elements with duplicates are transferred as [N,E] terms.
 
 ```console
 scala> encodeModified(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
@@ -101,7 +101,7 @@ res0: List[Any] = List((4,'a), 'b, (2,'c), (2,'a), 'd, (4,'e))
 
 ### [P12](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P12.scala) **(\*\*) Decode a run-length encoded list**
 
-Given a run-length code list generated as specified in problem 11. Construct its uncompressed version.
+> Given a run-length code list generated as specified in problem 11. Construct its uncompressed version.
 
 ```console
 scala> decode(List((4, 'a), (1, 'b), (2, 'c), (2, 'a), (1, 'd), (4, 'e)))
@@ -110,7 +110,7 @@ res0: List[Symbol] = List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e
 
 ### [P13](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P13.scala) **(\*\*) Run-length encoding of a list (direct solution)**
 
-Implement the so-called run-length encoding data compression method directly. I.e. don't explicitly create the sublists containing the duplicates, as in problem 09, but only count them
+> Implement the so-called run-length encoding data compression method directly. I.e. don't explicitly create the sublists containing the duplicates, as in problem 09, but only count them
 
 ```console
 scala> encodeDirect(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
@@ -140,7 +140,7 @@ res0: List[Symbol] = List('a, 'b, 'd, 'e, 'g, 'h, 'j, 'k)
 
 ### [P17](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P17.scala) **(\*\*) Split a list into two parts**
 
-The length of the first part is given. Use a Tuple for your result.
+> The length of the first part is given. Use a Tuple for your result.
 
 ```console
 scala> split(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k))
@@ -166,7 +166,7 @@ res1: List[Symbol] = List('j, 'k, 'a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i)
 
 ### [P20](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P20.scala) **(\*) Remove the K'th element from a list**
 
-Return the list and the removed element in a Tuple. Elements are numbered from 0.
+> Return the list and the removed element in a Tuple. Elements are numbered from 0.
 
 ```console
 scala> removeAt(1, List('a, 'b, 'c, 'd))
@@ -189,7 +189,7 @@ res0: List[Int] = List(4, 5, 6, 7, 8, 9)
 
 ### [P23](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P23.scala) **(\*) Extract a given number of randomly selected elements from a list**
 
-Hint: Use the solution to problem [P20](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P20.scala)
+> Hint: Use the solution to problem [P20](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P20.scala)
 
 ```console
 scala> randomSelect(3, List('a, 'b, 'c, 'd, 'f, 'g, 'h))
@@ -201,4 +201,16 @@ res0: List[Symbol] = List('e, 'd, 'a)
 ```console
 scala> lotto(6, 49)
 res0: List[Int] = List(23, 1, 17, 33, 21, 37)
+```
+
+### [P25](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P25.scala) **(\*) Generate a random permutation of the elements of a list**
+
+> Hint: Use the solution of problem [P23](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P23.scala)
+
+> *Instead of using the solution to problem 23 I have instead used An in-place shuffle also known as the inside-out algorithm by Richard Durstenfeld.
+  As this solution runs in O(n) time compared to the latter which runs in O(n<sup>2</sup>) time.*
+
+```console
+scala> randomPermute(List('a, 'b, 'c, 'd, 'e, 'f))
+res0: List[Symbol] = List('b, 'a, 'd, 'c, 'e, 'f)
 ```
