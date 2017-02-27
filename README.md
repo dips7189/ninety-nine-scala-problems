@@ -195,3 +195,10 @@ Hint: Use the solution to problem [P20](https://github.com/dips7189/ninety-nine-
 scala> randomSelect(3, List('a, 'b, 'c, 'd, 'f, 'g, 'h))
 res0: List[Symbol] = List('e, 'd, 'a)
 ```
+
+### [P24](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P24.scala) **(\*) Lotto: Draw N different random numbers from the set 1..M**
+
+```console
+scala> lotto(6, 49)
+res0: List[Int] = List(23, 1, 17, 33, 21, 37)
+```
