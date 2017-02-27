@@ -8,6 +8,8 @@ From the original source:
 
 > The problems have different levels of difficulty. Those marked with a single asterisk (\*) are easy. If you have successfully solved the preceding problems you should be able to solve them within a few (say 15) minutes. Problems marked with two asterisks (\*\*) are of intermediate difficulty. If you are a skilled Scala programmer it shouldn't take you more than 30-90 minutes to solve them. Problems marked with three asterisks (\*\*\*) are more difficult. You may need more time (i.e. a few hours or more) to find a good solution.
 
+> Solutions are available by clicking on the link at the beginning of the problem description.
+
 ## Lists
 
 ### [P01](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P01.scala) **(\*) Find the last element of a list**
@@ -178,9 +180,18 @@ scala> insertAt('new, 1, List('a, 'b, 'c, 'd))
 res0: List[Symbol] = List('a, 'new, 'b, 'c, 'd)
 ```
 
-### [P22](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P21.scala) **(\*) Create a list containing all integers within a given range**
+### [P22](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P22.scala) **(\*) Create a list containing all integers within a given range**
 
 ```console
 scala> range(4, 9)
 res0: List[Int] = List(4, 5, 6, 7, 8, 9)
+```
+
+### [P23](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P23.scala) **(\*) Extract a given number of randomly selected elements from a list**
+
+Hint: Use the solution to problem [P20](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P20.scala)
+
+```console
+scala> randomSelect(3, List('a, 'b, 'c, 'd, 'f, 'g, 'h))
+res0: List[Symbol] = List('e, 'd, 'a)
 ```
