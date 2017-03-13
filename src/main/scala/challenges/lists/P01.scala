@@ -5,6 +5,8 @@ import scala.annotation.tailrec
 object P01 {
 
     def lastUsingFoldLeft[X](l: List[X]): X = l.foldLeft(l head)((_, x) => x)
+    
+    def lastUsingFoldLeft2[X](l: List[X]): X = (l.head /: l)((_, x) => x)
 
     def lastUsingBuiltIn[X](l: List[X]): X = l last
 

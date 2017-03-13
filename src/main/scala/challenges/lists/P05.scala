@@ -6,7 +6,13 @@ object P05 {
 
     def reverseUsingBuiltIn[X](l: List[X]): List[X] = l reverse
 
-    def reverseUsingUsingFoldLeft[X](l: List[X]): List[X] = l.foldLeft(List[X]())((result, h) => h :: result)
+    def reverseUsingUsingFoldLeft[X](l: List[X]): List[X] = l.foldLeft(List[X]())((ys, h) => h :: ys)
+    
+    def reverseUsingUsingFoldLeft2[X](l: List[X]): List[X] = (List[X]() /: l)((xs, h) => h :: xs)
+
+    def reverseUsingUsingFoldRight[X](l: List[X]): List[X] = l.foldRight(List[X]())((x, ys) => ys :+ x)
+    
+    def reverseUsingUsingFoldRight2[X](l: List[X]): List[X] = (l :\ List[X]())((x, ys) => ys :+ x)
 
     def reverseUsingPatternMatching[X](l: List[X]): List[X] = {
         @tailrec

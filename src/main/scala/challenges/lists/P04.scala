@@ -9,8 +9,12 @@ object P04 {
     def lengthUsingBuiltInSize[X](l: List[X]): Int = l size
 
     def lengthUsingFoldLeft[X](l: List[X]): Int = l.foldLeft(0)((acc, _) => acc + 1)
+    
+    def lengthUsingFoldLeft2[X](l: List[X]): Int = (0 /: l)((z, _) => z + 1)
 
     def lengthUsingFoldRight[X](l: List[X]): Int = l.foldRight(0)((_, acc) => acc + 1)
+    
+    def lengthUsingFoldRight2[X](l: List[X]): Int = (l :\ 0)((_, z) => z + 1)
 
     def lengthUsingPatternMatching[X](l: List[X]): Int = {
         @tailrec

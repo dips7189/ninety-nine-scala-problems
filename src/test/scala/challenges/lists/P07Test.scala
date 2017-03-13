@@ -10,6 +10,7 @@ class P07Test extends FlatSpec with Matchers {
     "flatten and flatten using flatmap" should "return expected" in {
         P07.flatten(l) should contain theSameElementsInOrderAs expected
         P07.flattenUsingFlatMap(l) should contain theSameElementsInOrderAs expected
+        P07.flattenUsingFoldLeft(l) should contain theSameElementsInOrderAs expected
     }
 
 }

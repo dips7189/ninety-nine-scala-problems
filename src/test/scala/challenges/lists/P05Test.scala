@@ -10,6 +10,9 @@ class P05Test extends FlatSpec with Matchers {
 
     "reverse using foldleft, pattern matching and second pattern mathing attempt" should "return expectedList" in {
         P05.reverseUsingUsingFoldLeft(l) should contain theSameElementsInOrderAs expectedList
+        P05.reverseUsingUsingFoldLeft2(l) should contain theSameElementsInOrderAs expectedList
+        P05.reverseUsingUsingFoldRight(l) should contain theSameElementsInOrderAs expectedList
+        P05.reverseUsingUsingFoldRight2(l) should contain theSameElementsInOrderAs expectedList
         P05.reverseUsingPatternMatching(l) should contain theSameElementsInOrderAs expectedList
         P05.reverseUsingPatternMatchingAgain(l) should contain theSameElementsInOrderAs expectedList
     }

@@ -9,7 +9,9 @@ class P04Test extends FlatSpec with Matchers {
 
     "length using foldLeft, foldRight, pattern matching, pattern matching again & indexOf" should "return 10" in {
         P04.lengthUsingFoldLeft(l) shouldBe 10
+        P04.lengthUsingFoldLeft2(l) shouldBe 10
         P04.lengthUsingFoldRight(l) shouldBe 10
+        P04.lengthUsingFoldRight2(l) shouldBe 10
         P04.lengthUsingPatternMatching(l) shouldBe 10
         P04.lengthUsingPatternMatchingAgain(l) shouldBe 10
         P04.lengthUsingBuildInIndexOf(l) shouldBe 10
@@ -17,7 +19,9 @@ class P04Test extends FlatSpec with Matchers {
 
     "length using foldLeft, foldRight, pattern matching, pattern matching again & indexOf" should "return 0" in {
         P04.lengthUsingFoldLeft(emptyList) shouldBe 0
+        P04.lengthUsingFoldLeft2(emptyList) shouldBe 0
         P04.lengthUsingFoldRight(emptyList) shouldBe 0
+        P04.lengthUsingFoldRight2(emptyList) shouldBe 0
         P04.lengthUsingPatternMatching(emptyList) shouldBe 0
         P04.lengthUsingPatternMatchingAgain(emptyList) shouldBe 0
     }
