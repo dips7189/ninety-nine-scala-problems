@@ -271,4 +271,9 @@ res1: List[List[Symbol]] = List(List('i, 'j, 'k, 'l), List('o), List('a, 'b, 'c)
 
 ## Arithmetic
 
-For the next section, we're going to take a different tack with the solutions. We'll declare a new class, S99Int, and an implicit conversion from regular Ints.
+### [P31](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P31.scala) **(\*\*) Determine whether a given integer number is prime**
+
+```console
+scala> 7.isPrime
+res0: Boolean = true
+```
