@@ -277,3 +277,11 @@ res1: List[List[Symbol]] = List(List('i, 'j, 'k, 'l), List('o), List('a, 'b, 'c)
 scala> 7.isPrime
 res0: Boolean = true
 ```
+### [P32](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P32.scala) **(\*\*) Determine the greatest common divisor of two positive integer numbers**
+
+Use Euclid's algorithm.
+
+```console
+scala> gcd(36, 63)
+res0: Int = 9
+```
