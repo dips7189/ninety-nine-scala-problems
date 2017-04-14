@@ -294,3 +294,12 @@ Two numbers are coprime if their greatest common divisor equals 1.
 scala> 35.isCoprimeTo(64)
 res0: Boolean = true
 ```
+
+### [P34](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P34.scala) **(\*\*) Calculate Euler's totient function phi(m)**
+
+Euler's so-called totient function phi(m) is defined as the number of positive integers r (1 <= r <= m) that are coprime to m.
+
+```console
+scala> 10.totient
+res0: Int = 4
+```
