@@ -9,8 +9,8 @@ class P31Test extends FlatSpec with Matchers {
   val expected = List(true, true, true, true, false, true, true, true, false, true, true, true, true, true, true, true)
 
   "is Prime" should "determine whether numbers are prime" in {
-    val resultFromFirst = numbers.foldLeft(List[Boolean]())((acc, i) => P31.isPrime_first(i) :: acc).reverse
-    val resultFromSecond = numbers.foldLeft(List[Boolean]())((acc, i) => P31.isPrime_second(i) :: acc).reverse
+    val resultFromFirst = numbers.foldLeft(List[Boolean]())((acc, i) => P31.isPrime(i) :: acc).reverse
+    val resultFromSecond = numbers.foldLeft(List[Boolean]())((acc, i) => P31.isPrime_(i) :: acc).reverse
     val resultFromFermatsLittleTheorem = numbers.foldLeft(List[Boolean]())((acc, i) => P31.isPrime_usingFermatsLittleTheorem(i) :: acc).reverse
 
     resultFromFirst should contain theSameElementsInOrderAs expected

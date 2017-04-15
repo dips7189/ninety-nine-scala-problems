@@ -303,3 +303,12 @@ Euler's so-called totient function phi(m) is defined as the number of positive i
 scala> 10.totient
 res0: Int = 4
 ```
+
+### [P35](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P35.scala) **(\*\*) Determine the prime factors of a given positive integer**
+
+Construct a flat list containing the prime factors in ascending order.
+
+```console
+scala> 315.primeFactors
+res0: List[Int] = List(3, 3, 5, 7)
+```

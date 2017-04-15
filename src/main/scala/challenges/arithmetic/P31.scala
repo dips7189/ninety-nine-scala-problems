@@ -2,9 +2,9 @@ package challenges.arithmetic
 
 object P31 {
 
-  def isPrime_first(i: Int): Boolean = !((2 until Math.sqrt(i).toInt) exists (i % _ == 0))
+  def isPrime(i: Int): Boolean = !((2 until Math.sqrt(i).toInt) exists (i % _ == 0))
 
-  def isPrime_second(i: Int): Boolean = (2 to i) takeWhile{ (_ <= Math.sqrt(i).toInt) } forall(i % _ != 0)
+  def isPrime_(i: Int): Boolean = (2 to i) takeWhile{ (_ <= Math.sqrt(i).toInt) } forall(i % _ != 0)
 
   def isPrime_usingFermatsLittleTheorem(i: Int): Boolean = {
     val i2 = BigInt(i)
