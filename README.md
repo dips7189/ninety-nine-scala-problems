@@ -313,7 +313,7 @@ scala> 315.primeFactors
 res0: List[Int] = List(3, 3, 5, 7)
 ```
 
-### [P35](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P36.scala) **(\*\*) Determine the prime factors of a given positive integer (2)**
+### [P36](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P36.scala) **(\*\*) Determine the prime factors of a given positive integer (2)**
 
 Construct a list containing the prime factors and their multiplicity.
 
@@ -327,4 +327,20 @@ Alternately, use a Map for the result.
 ```console
 scala> 315.primeFactorMultiplicity
 res0: Map[Int,Int] = Map(3 -> 2, 5 -> 1, 7 -> 1)
+```
+
+### [P37](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P37.scala) **(\*\*) Calculate Euler's totient function phi(m) (improved)**
+
+See problem [P34](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P34.scala) for the definition of Euler's totient function. If the list of the prime factors of a 
+number m is known in the form of problem [P36](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P36.scala) then the function phi(m>) can be efficiently calculated 
+as follows: Let _[[p1, m1], [p2, m2], [p3, m3], ...]_ be the list of prime factors (and their 
+multiplicities) of a given number m. Then phi(m) can be calculated with the following formula:
+
+_phi(m) = (p1-1)*p1(m1-1) * (p2-1)*p2(m2-1) * (p3-1)*p3(m3-1) * ..._
+
+Note that a<sup>b</sup> stands for the bth power of a
+
+```console
+scala> 315.primeFactors
+res0: List[Int] = List(3, 3, 5, 7)
 ```
