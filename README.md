@@ -312,3 +312,19 @@ Construct a flat list containing the prime factors in ascending order.
 scala> 315.primeFactors
 res0: List[Int] = List(3, 3, 5, 7)
 ```
+
+### [P35](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P36.scala) **(\*\*) Determine the prime factors of a given positive integer (2)**
+
+Construct a list containing the prime factors and their multiplicity.
+
+```console
+scala> 315.primeFactorMultiplicity
+res0: List[(Int, Int)] = List((3,2), (5,1), (7,1))
+```
+
+Alternately, use a Map for the result.
+
+```console
+scala> 315.primeFactorMultiplicity
+res0: Map[Int,Int] = Map(3 -> 2, 5 -> 1, 7 -> 1)
+```
