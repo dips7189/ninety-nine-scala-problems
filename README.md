@@ -340,7 +340,7 @@ _phi(m) = (p1-1)*p1(m1-1) * (p2-1)*p2(m2-1) * (p3-1)*p3(m3-1) * ..._
 
 Note that a<sup>b</sup> stands for the bth power of a
 
-### [P38](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P38.scala) **(\*\*) Determine the prime factors of a given positive integer**
+### [P38](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P38.scala) **(\*) Determine the prime factors of a given positive integer**
 
 Use the solutions of problems [P34](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P34.scala) and [P37](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P37.scala) to compare the algorithms. Try to calculate phi(10090) as an example.
 
