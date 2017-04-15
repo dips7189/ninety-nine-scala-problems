@@ -339,8 +339,3 @@ multiplicities) of a given number m. Then phi(m) can be calculated with the foll
 _phi(m) = (p1-1)*p1(m1-1) * (p2-1)*p2(m2-1) * (p3-1)*p3(m3-1) * ..._
 
 Note that a<sup>b</sup> stands for the bth power of a
-
-```console
-scala> 315.primeFactors
-res0: List[Int] = List(3, 3, 5, 7)
-```
