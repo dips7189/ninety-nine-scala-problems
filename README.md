@@ -344,3 +344,11 @@ Note that a<sup>b</sup> stands for the bth power of a
 
 Use the solutions of problems [P34](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P34.scala) and [P37](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P37.scala) to compare the algorithms. Try to calculate phi(10090) as an example.
 
+### [P39](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P39.scala) **(\*) A list of prime numbers**
+
+Given a range of integers by its lower and upper limit, construct a list of all prime numbers in that range.
+
+```console
+scala> listPrimesinRange(7 to 31)
+res0: List[Int] = List(7, 11, 13, 17, 19, 23, 29, 31)
+```
