@@ -14,6 +14,7 @@ From the original source:
 
 * [Lists](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/README.md#lists)
 * [Arithmetic](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/README.md#arithmetic)
+* [Logic & Codes](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/README.md#logic-and-codes)
 
 ## Lists
 
@@ -397,4 +398,4 @@ scala> printGoldbachListLimited(1 to 2000, 50)
 1928 = 61 + 1867
 ```
 
-## Logic & Codes
+## Logic and Codes
