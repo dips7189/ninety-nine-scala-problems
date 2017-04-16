@@ -400,7 +400,7 @@ scala> printGoldbachListLimited(1 to 2000, 50)
 
 ## Logic and Codes
 
-### [P46](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P46.scala) **(\*\*) Truth tables for logical expressions**
+### [P46](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/logicandcodes/P46.scala) **(\*\*) Truth tables for logical expressions**
 
 Define functions `and`, `or`, `nand`, `nor`, `xor`, `impl`, and `equ` (for logical equivalence) which return true or false according to the result of their respective operations; 
 e.g. `and(A, B)` is true if and only if both _A_ and _B_ are true
