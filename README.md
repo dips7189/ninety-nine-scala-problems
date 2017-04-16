@@ -10,6 +10,11 @@ From the original source:
 
 > Solutions are available by clicking on the link at the beginning of the problem description.
 
+## Contents
+
+* [Lists](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/README.md#lists)
+* [Arithmetic](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/README.md#arithmetic)
+
 ## Lists
 
 ### [P01](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/lists/P01.scala) **(\*) Find the last element of a list**
@@ -392,3 +397,4 @@ scala> printGoldbachListLimited(1 to 2000, 50)
 1928 = 61 + 1867
 ```
 
+## Logic & Codes
