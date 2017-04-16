@@ -353,7 +353,7 @@ scala> listPrimesinRange(7 to 31)
 res0: List[Int] = List(7, 11, 13, 17, 19, 23, 29, 31)
 ```
 
-### [P40](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P39.scala) **(\*\*) Goldbach's conjecture**
+### [P40](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P40.scala) **(\*\*) Goldbach's conjecture**
 
 Goldbach's conjecture says that every positive even number greater than 2 is the sum of two prime numbers. 
 E.g. 28 = 5 + 23. It is one of the most famous facts in number theory that has not been proved to be correct 
