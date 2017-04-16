@@ -424,3 +424,43 @@ true  false true
 false true  false
 false false false
 ```
+
+### [P47](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P47.scala) **(\*) Truth tables for logical expressions (2)**
+
+Continue problem [P46](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P46.scala) 
+by redefining `and`, `or`, etc as operators. (i.e. make them methods of a new class with an implicit conversion from Boolean.) `not` will have to be left as a object method.
+
+```console
+scala> table2((a: Boolean, b: Boolean) => a and (a or not(b)))
+A     B     result
+true  true  true
+true  false true
+false true  false
+false false false
+```
+
+### P48 **(\*\*) Truth tables for logical expressions (3)**
+Omitted for now.
+
+### [P49](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P49.scala) **(\*\*) Gray code**
+
+An n-bit Gray code is a sequence of n-bit strings constructed according to certain rules. For example,
+
+n = 1: C(1) = ("0", "1").<br>
+n = 2: C(2) = ("00", "01", "11", "10").<br>
+n = 3: C(3) = ("000", "001", "011", "010", "110", "111", "101", "100").<br>
+
+Find out the construction rules and write a function to generate Gray codes.
+
+```console
+scala> gray(3)
+res0 List[String] = List(000, 001, 011, 010, 110, 111, 101, 100)
+```
+See if you can use memoization to make the function more efficient.
+
+> This is a note from me about how to work out gray codes since  I come from a base where the number systems have weights
+  in their positions.<br><br>
+  The binary-reflected Gray code list for n bits can be generated recursively from the list
+  for n − 1 bits by reflecting the list (i.e. listing the entries in reverse order),
+  concatenating the original list with the reversed list, prefixing the entries in the original
+  list with a binary 0, and then prefixing the entries in the reflected list with a binary 1.
