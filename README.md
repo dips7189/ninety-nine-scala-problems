@@ -442,7 +442,7 @@ false false false
 ### P48 **(\*\*) Truth tables for logical expressions (3)**
 Omitted for now.
 
-### [P49](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P49.scala) **(\*\*) Gray code**
+### [P49](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/logicandcodes/P49.scala) **(\*\*) Gray code**
 
 An n-bit Gray code is a sequence of n-bit strings constructed according to certain rules. For example,
 
