@@ -1,6 +1,6 @@
 package challenges.logicandcodes
 
-class P48 {
+object P48 {
 
     // omitted...
 
