@@ -7,7 +7,6 @@ object P50 {
 
     private abstract sealed class Tree[X] {
         val freq: Int
-
         def toCode(prefix: String): List[(X, String)]
     }
 
@@ -26,7 +25,6 @@ object P50 {
             case (Queue(), y +: ys) => (q2.front, q1, q2.dequeue._2)
             case (x +: xs, y +: ys) if q2.front.freq < q1.front.freq => (q2.front, q1, q2.dequeue._2)
             case _ => (q1.front, q1.dequeue._2, q2)
-
         }
 
         @tailrec
