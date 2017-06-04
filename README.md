@@ -1,4 +1,4 @@
-# Ninety-Nine Problems in Scala
+# 99 Problems In Scala
 
 This is an adaptation of the [Ninety-Nine Prolog Problems](https://sites.google.com/site/prologsite/prolog-problems) written by Werner Hett at the Berne University of Applied Sciences in Berne, Switzerland.
 
@@ -425,7 +425,7 @@ false true  false
 false false false
 ```
 
-### [P47](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P47.scala) **(\*) Truth tables for logical expressions (2)**
+### [P47](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/logicandcodes/P47.scala) **(\*) Truth tables for logical expressions (2)**
 
 Continue problem [P46](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/arithmetic/P46.scala) 
 by redefining `and`, `or`, etc as operators. (i.e. make them methods of a new class with an implicit conversion from Boolean.) `not` will have to be left as a object method.
@@ -464,3 +464,15 @@ See if you can use memoization to make the function more efficient.
   for n − 1 bits by reflecting the list (i.e. listing the entries in reverse order),
   concatenating the original list with the reversed list, prefixing the entries in the original
   list with a binary 0, and then prefixing the entries in the reflected list with a binary 1.
+  
+### [50](https://github.com/dips7189/ninety-nine-scala-problems/blob/master/src/main/scala/challenges/logicandcodes/P50.scala) **(\*\*\*) Huffman code**
+
+First of all, consult a good book on discrete mathematics or algorithms for a detailed description of Huffman codes!
+
+We suppose a set of symbols with their frequencies, given as a list of _(S, F)_ Tuples. E.g. (("a", 45), ("b", 13), ("c", 12), ("d", 16), ("e", 9), ("f", 5)). Our objective is to construct a list of _(S, C)_ Tuples, where C is the Huffman code word for the symbol _S_.
+
+```console
+scala> huffman(List(("a", 45), ("b", 13), ("c", 12), ("d", 16), ("e", 9), ("f", 5)))
+res0: List[String, String] = List((a,0), (b,101), (c,100), (d,111), (e,1101), (f,1100))
+```
+
