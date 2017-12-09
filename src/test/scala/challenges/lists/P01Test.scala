@@ -9,7 +9,7 @@ class P01Test extends FlatSpec with Matchers {
 
     "Last using pattern matching" should "return 598" in {
         val last = P01.lastUsingPatternMatching(l)
-        last should be (598)
+        last shouldBe Some(598)
     }
 
     "Last using another built-in" should "return 598" in {
@@ -26,9 +26,12 @@ class P01Test extends FlatSpec with Matchers {
     }
 
     "Last using pattern matching, another built-in and using fold left" should "throw no such element exception" in {
-        an [NoSuchElementException] should be thrownBy P01.lastUsingPatternMatching(emptyList)
         an [NoSuchElementException] should be thrownBy P01.lastUsingAnotherBuiltIn(emptyList)
         an [NoSuchElementException] should be thrownBy P01.lastUsingFoldLeft(emptyList)
+    }
+
+    "Last using patter matching" should "return None" in {
+        P01.lastUsingPatternMatching(emptyList) shouldBe None
     }
 
 }

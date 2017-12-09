@@ -19,21 +19,21 @@ class P03Test extends FlatSpec with Matchers {
 
     "nth using pattern matching" should "return Quatre Raberba Winner" in {
         val third = P03.nthUsingPatternMatching(2, l)
-        third should be ("Quatre Raberba Winner")
+        third shouldBe Some("Quatre Raberba Winner")
     }
 
     "nth using pattern matching again" should "return Trao Barton" in {
         val fourth = P03.nthUsingPatternMatchingAgain(3, l)
-        fourth should be ("Troa Barton")
+        fourth shouldBe Some("Troa Barton")
     }
 
     "nth using built-in lift, built-in drop, and both pattern matching" should "throw no such element exception" in {
         an [NoSuchElementException] should be thrownBy P03.nthUsingBuiltInLift(0, emptyList)
         an [NoSuchElementException] should be thrownBy P03.nthUsingBuiltInDrop(3, emptyList)
-        an [NoSuchElementException] should be thrownBy P03.nthUsingPatternMatching(1, emptyList)
-        an [NoSuchElementException] should be thrownBy P03.nthUsingPatternMatchingAgain(2, emptyList)
     }
 
-
-
+    "nth using pattern matching" should "return None" in {
+        P03.nthUsingPatternMatching(1, emptyList) shouldBe None
+        P03.nthUsingPatternMatchingAgain(2, emptyList) shouldBe None
+    }
 }

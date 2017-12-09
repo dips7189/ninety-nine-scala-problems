@@ -13,9 +13,9 @@ object P01 {
     def lastUsingAnotherBuiltIn[X](l: List[X]): X = l.reverse.head
 
     @tailrec
-    def lastUsingPatternMatching[X](l: List[X]): X = l match {
-        case x :: Nil => x
+    def lastUsingPatternMatching[X](l: List[X]): Option[X] = l match {
+        case x :: Nil => Some(x)
         case _ :: xs => lastUsingPatternMatching(xs)
-        case _ => throw new NoSuchElementException
+        case _ => None
     }
 }
